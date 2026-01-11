@@ -24,3 +24,40 @@ To install the necessary dependencies, run:
 ```bash
 pip install pandas numpy matplotlib scikit-learn
 
+## Methodology
+
+### Data Loading & Exploration
+- Load the dataset using **Pandas**  
+- Perform **Exploratory Data Analysis (EDA)** to check data structure, null values, and visualize distributions  
+- Generate correlation matrices to analyze relationships between features  
+
+### Data Preprocessing
+- **Label Encoding:** Initially applied to the `Address` column (ultimately dropped)  
+- **Feature Selection:** Separate target variable (`Price`) from irrelevant features (`Address`)  
+- **Data Splitting:** Train-test split  
+- **Scaling:** `StandardScaler` used to normalize features  
+
+### Model Training
+- **Linear Regression:** Models the linear relationship between features and target  
+- **Random Forest Regressor:** Ensemble method building multiple decision trees  
+
+---
+
+## Results
+
+| Model                  | MSE   | RMSE  | R² Score |
+|------------------------|-------|-------|----------|
+| Linear Regression      | 0.08  | 0.28  | 0.92     |
+| Random Forest Regressor| 0.11  | 0.34  | 0.88     |
+
+---
+
+## Conclusion
+The **Linear Regression** model outperformed the Random Forest Regressor for this dataset, achieving:
+
+- **Higher R² Score** (~0.92 vs 0.88)  
+- **Lower MSE and RMSE**  
+
+This indicates that Linear Regression explains a greater proportion of the variance in housing prices and makes smaller prediction errors.
+
+
