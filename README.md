@@ -23,6 +23,7 @@ The project is implemented in Python and requires the following libraries:
 To install the necessary dependencies, run:
 ```bash
 pip install pandas numpy matplotlib scikit-learn
+```  
 
 ## Methodology
 
@@ -59,5 +60,6 @@ The **Linear Regression** model outperformed the Random Forest Regressor for thi
 - **Lower MSE and RMSE**  
 
 This indicates that Linear Regression explains a greater proportion of the variance in housing prices and makes smaller prediction errors.
+
 
 
